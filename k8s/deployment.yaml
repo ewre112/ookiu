@@ -1,44 +1,44 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okmi2
+  name: mokkker
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okmi2
+      app: mokkker
   template:
     metadata:
       labels:
-        app: okmi2
+        app: mokkker
     spec:
       containers:
-      - image: okteto.dev/okmi2:latest
-        name: okmi2
+      - image: okteto.dev/mokkker:latest
+        name: mokkker
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: Site
-          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+          value: "https://github.com/kkkewd/Html/raw/main/GoidFood-html.zip"
         - name: ParameterSSENCYPT
           value: "chacha20-ietf-poly1305"
         - name: Vless_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "0f052862-d311-4308-bdda-5471b841830b"
         - name: Vless_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-vless"
+          value: "/0f052862-d311-4308-bdda-5471b841830b-vless"
         - name: Vmess_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "0f052862-d311-4308-bdda-5471b841830b"
         - name: Vmess_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-vmess"
+          value: "/0f052862-d311-4308-bdda-5471b841830b-vmess"
         - name: Trojan_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "0f052862-d311-4308-bdda-5471b841830b"
         - name: Trojan_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-trojan"
+          value: "/0f052862-d311-4308-bdda-5471b841830b-trojan"
         - name: SS_UUID
-          value: "62391c87-553c-4260-af28-cd0827554c54"
+          value: "0f052862-d311-4308-bdda-5471b841830b"
         - name: SS_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-ss"
+          value: "/0f052862-d311-4308-bdda-5471b841830b-ss"
         - name: Share_Path
-          value: "/62391c87-553c-4260-af28-cd0827554c54-share"
+          value: "/0f052862-d311-4308-bdda-5471b841830b-share"
